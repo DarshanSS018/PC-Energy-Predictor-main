@@ -1,0 +1,85 @@
+{
+  "features": [
+    "cpu_usage",
+    "gpu_usage",
+    "ram_usage",
+    "cpu_freq_ghz",
+    "cpu_temp_c",
+    "gpu_temp_c",
+    "disk_activity",
+    "network_activity"
+  ],
+  "target": "power_watts",
+  "best_model": "Gradient Boosting",
+  "feature_importance": {
+    "cpu_usage": 0.0028,
+    "gpu_usage": 0.0396,
+    "ram_usage": 0.0005,
+    "cpu_freq_ghz": 0.0015,
+    "cpu_temp_c": 0.9535,
+    "gpu_temp_c": 0.0014,
+    "disk_activity": 0.0003,
+    "network_activity": 0.0003
+  },
+  "linear_coefficients_standardised": {
+    "cpu_usage": 14.784,
+    "gpu_usage": 21.767,
+    "ram_usage": 1.875,
+    "cpu_freq_ghz": -5.08,
+    "cpu_temp_c": 44.198,
+    "gpu_temp_c": 10.258,
+    "disk_activity": 0.572,
+    "network_activity": 0.193
+  },
+  "feature_ranges": {
+    "cpu_usage": [
+      1.0,
+      100.0
+    ],
+    "gpu_usage": [
+      0.0,
+      100.0
+    ],
+    "ram_usage": [
+      10.4,
+      93.0
+    ],
+    "cpu_freq_ghz": [
+      0.98,
+      5.0
+    ],
+    "cpu_temp_c": [
+      28.0,
+      98.0
+    ],
+    "gpu_temp_c": [
+      28.0,
+      87.5
+    ],
+    "disk_activity": [
+      0.1,
+      100.0
+    ],
+    "network_activity": [
+      0.0,
+      53.7
+    ]
+  },
+  "feature_means": {
+    "cpu_usage": 39.673,
+    "gpu_usage": 31.238,
+    "ram_usage": 52.329,
+    "cpu_freq_ghz": 2.992,
+    "cpu_temp_c": 58.707,
+    "gpu_temp_c": 44.155,
+    "disk_activity": 15.991,
+    "network_activity": 7.171
+  },
+  "n_rows": 5000,
+  "n_train": 4000,
+  "n_test": 1000,
+  "target_mean_w": 122.18388,
+  "target_min_w": 25.1,
+  "target_max_w": 345.7,
+  "data_source": "pc_energy.csv"
+}
