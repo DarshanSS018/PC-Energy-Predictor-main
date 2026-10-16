@@ -10,7 +10,6 @@ python scripts/generate_dataset.py      # synthetic dataset -> data/pc_energy.cs
 python scripts/train.py                 # trains 3 models, writes models/ and reports/
 uvicorn app.main:app --reload           # open http://127.0.0.1:8000
 ```
-
 ## Structure
 | Path | Purpose | Synopsis role |
 |---|---|---|
@@ -32,7 +31,7 @@ Do not present it as measured data in the report. For real data:
 Columns: `cpu_usage, gpu_usage, ram_usage, cpu_freq_ghz, cpu_temp_c, gpu_temp_c, disk_activity, network_activity, power_watts`.
 
 ## Metrics (synopsis list)
-MAE, MSE, RMSE, R², training time and prediction time are computed in `train.py` and shown in the UI.
+MAE, MSE, RMSE, R², training time and prediction time are computed in `train.py` and shown in the UI..
 
 ## API
 `POST /api/predict` with `{"cpu_usage":75,"gpu_usage":60,"ram_usage":70,"cpu_freq_ghz":3.2,"cpu_temp_c":70}`
