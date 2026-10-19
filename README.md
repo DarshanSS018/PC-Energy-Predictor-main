@@ -1,5 +1,7 @@
 # PC Energy Consumption Predictor
 
+
+
 Green Computing (22CS75) project: predicts PC power draw (watts) from system telemetry using
 Linear Regression, Random Forest and Gradient Boosting, served through FastAPI with an HTML/CSS/JS UI.
 
